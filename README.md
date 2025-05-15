@@ -4,7 +4,9 @@ performing OLAP queries against the data to simulate the real-world process. A m
 algorithm was utilized in java to create a large streaming tuple which involved the disk buffer 
 (transactions) and the master data (customer and products data), which was then loaded into a 
 star schema in a MySQL server for analyzing. 
-Schema of the data warehouse 
+
+# Schema of the data warehouse 
+
 For the representation of the data warehouse in a MySQL environment, a star schema was 
 implemented which had the following components: 
  Metro Sales (Fact table): The fact table which served as the subject for the data 
@@ -20,7 +22,8 @@ and their attributes.
 their ID. 
  Store (Dimension): This dimension holds information concerning the name of the store 
 and the number used for its identification. 
-Mesh join algorithm 
+
+# Mesh join algorithm 
 The mesh join algorithm is used to join streaming data with a large dataset that is already 
 present in the hard disk. This join is performed in real time, and the joint dataset is typically 
 used for further streaming. The algorithm works by initially breaking the stored dataset into 
